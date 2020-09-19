@@ -25,7 +25,10 @@
           <td>
             <button class="btn-block btn-warning">Editar</button>
 
+            <form method="POST" action="/categories/delete" style="display: inline" >
+              <input type="hidden" name="id" value="<%= categoria.id%>">
             <button class="btn-block btn-danger">Apagar</button>
+            </form>
 
           </td>
         </tr>
